@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日一文 - 经典诗句</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>每日一文 - 经典诗句</h1>
+        <button id="admin-login-btn">后台管理</button>
+    </header>
+    <main>
+        <div id="poem-container">
+            <!-- 每日一文内容将在此显示 -->
+        </div>
+        <div id="ad-container">
+            <!-- 广告将在此显示 -->
+        </div>
+        <div id="admin-panel" style="display: none;">
+            <h2>后台管理</h2>
+            <div id="login-form">
+                <h3>登录</h3>
+                <input type="text" id="username" placeholder="用户名">
+                <input type="password" id="password" placeholder="密码">
+                <button id="submit-login">登录</button>
+            </div>
+            <div id="admin-content" style="display: none;">
+                <h3>每日一文管理</h3>
+                <button id="list-poems">获取列表</button>
+                <button id="add-poem">添加文章</button>
+                <div id="poem-form" style="display: none;">
+                    <input type="text" id="poem-title" placeholder="标题">
+                    <input type="text" id="poem-author" placeholder="作者">
+                    <textarea id="poem-content" placeholder="内容"></textarea>
+                    <button id="submit-poem">提交</button>
+                </div>
+                <h3>广告管理</h3>
+                <button id="list-ads">获取广告列表</button>
+                <button id="add-ad">添加广告</button>
+                <div id="ad-form" style="display: none;">
+                    <input type="text" id="ad-link" placeholder="链接">
+                    <input type="text" id="ad-image" placeholder="图片地址">
+                    <input type="text" id="ad-alt" placeholder="替代文本">
+                    <button id="submit-ad">提交</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

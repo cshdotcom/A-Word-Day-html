@@ -1,0 +1,12 @@
+{
+    "name": "a-word-day",
+    "version": "1.0.0",
+    "description": "每日一文经典诗句网页，含广告和接口功能",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2"
+    }
+}
